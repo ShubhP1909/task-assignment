@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="text-center employee-details-wrapper">
+        <h2>Select your account:</h2>
+        <div class="mt-4">
+            <div *ngFor="let employee of employees" class="mt-2">
+                <button class="btn employee-btn-wrapper mb-2" (click)="navigateToQueue()">
+                    {{ employee?.name }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
